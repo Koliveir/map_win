@@ -19,8 +19,12 @@ hostname >> %log_path%\map_log.txt
 echo. >> %log_path%\map_log.txt
 whoami /priv >> %log_path%\map_log.txt
 echo. >> %log_path%\map_log.txt
-echo INFORMAÇÕES DO SISTEMA: >> %log_path%\map_log.txt
+echo INFORMAÇÕES DO SISTEMA >> %log_path%\map_log.txt
 echo --------------------------- >> %log_path%\map_log.txt
 systeminfo >> %log_path%\map_log.txt
+echo MAPEAMENTOS ATUAIS >> %log_path%\map_log.txt
+echo --------------------------- >> %log_path%\map_log.txt
+net use >> %log_path%\map_log.txt
+
 
 start notepad.exe %log_path%\map_log.txt
